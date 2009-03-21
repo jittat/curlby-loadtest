@@ -1,0 +1,28 @@
+Release 0.03
+============
+
+Date: 3 apr 2008
+Problems:
+
+* If some curl process goes to sleep mode and never comes back, the
+  runner will wait forver.
+
+Changes:
+
+* Add some work around for the above problem, by intercepting
+  Interrupt exception (when user presses c-break) during thread.join.
+  The program still produces statistics
+
+
+Release 0.02
+============
+
+Changes:
+
+* Fixed bugs on left-over temporary files.
+
+* Added visitor id substitution on post and get parameter values.
+
+* Added dry-run option (-d) to runner.
+
+Date: 2 apr 2008
